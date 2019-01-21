@@ -1,3 +1,7 @@
+[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/VeenDuco/bayesreg?branch=master&svg=true)](https://ci.appveyor.com/project/VeenDuco/bayesreg)
+
+<!---[![Travis build status](https://travis-ci.org/VeenDuco/bayesreg.svg?branch=master)](https://travis-ci.org/VeenDuco/bayesreg)--->
+
 # bayesreg
 An R package to perform Bayesian regularization using Stan. Models are pre-compiled and run using the probabilistic programming language [Stan](http://mc-stan.org). Currently only supports Bayesian regularization for linear regression models. Multiple shrinkage priors are implemented that will shrink small regression coefficients towards zero. The available options are based on the overview in the preprint [Shrinkage priors for Bayesian penalized regression](https://osf.io/4gr6z/). Note that only the full Bayesian approach is available to estimate the penalty parameter &lambda;.
 
@@ -26,7 +30,7 @@ library(devtools)
 Next, install **bayesreg** and make sure that `local = TRUE` to avoid recompilation of the Stan models.
 
 ```
-install_github("sara-vanerp/bayesreg", local = TRUE)
+install_github("sara-vanerp/bayesreg@windows", local = TRUE)
 ```
 On Windows, the above method might not always work. In that case, download the zip file for the package, unzip it, and install the package directly using **devtools** as follows:
 
